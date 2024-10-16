@@ -7,7 +7,7 @@ variable "eks_public_access_cidrs" {
 variable "region" {
   description = "AWS Region to deploy into"
   type        = string
-  default     = "us-central-1"
+  default     = "eu-central-1"
 }
 
 variable "vpc_name" {
