@@ -7,7 +7,7 @@ variable "eks_public_access_cidrs" {
 variable "region" {
   description = "AWS Region to deploy into"
   type        = string
-  default     = "us-east-1"
+  default     = "us-central-1"
 }
 
 variable "vpc_name" {
@@ -56,7 +56,7 @@ variable "instance_types" {
   description = "List of EC2 instances types to use for EKS nodes"
   type        = list(string)
   default = [
-    "t3.large"
+    "t2.micro"
   ]
 }
 
@@ -97,5 +97,5 @@ variable "ingress_nginx_min_unavailable" {
 variable "disk_size" {
   description = "Disk size in GB to use for EKS nodes"
   type        = number
-  default     = 20
+  default     = 30
 }

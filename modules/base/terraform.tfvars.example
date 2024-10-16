@@ -33,7 +33,7 @@ ingress_nginx_replica_count = 2
 
 # List of EC2 instances types to use for EKS nodes
 instance_types = [
-  "t3.large"
+  "t2.micro"
 ]
 
 # Desired number of nodes for the EKS node group
@@ -46,7 +46,7 @@ node_group_max_size = 3
 node_group_min_size = 2
 
 # AWS Region to deploy into
-region = "us-east-1"
+region = "eu-central-1"
 
 # AWS VPC name
 vpc_name = "ref-arch"
