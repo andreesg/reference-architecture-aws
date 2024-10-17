@@ -70,7 +70,7 @@ Module that provides the reference architecture.
 | iam\_role\_name | Name of the IAM user to create for Humanitec EKS access | `string` | `"svc-humanitec"` | no |
 | ingress\_nginx\_min\_unavailable | Number of allowed unavaiable replicas for the ingress-nginx controller | `number` | `1` | no |
 | ingress\_nginx\_replica\_count | Number of replicas for the ingress-nginx controller | `number` | `2` | no |
-| instance\_types | List of EC2 instances types to use for EKS nodes | `list(string)` | <pre>[<br>  "t3.large"<br>]</pre> | no |
+| instance\_types | List of EC2 instances types to use for EKS nodes | `list(string)` | <pre>[<br>  "t2.micro"<br>]</pre> | no |
 | node\_group\_desired\_size | Desired number of nodes for the EKS node group | `number` | `3` | no |
 | node\_group\_max\_size | Maximum number of nodes for the EKS node group | `number` | `3` | no |
 | node\_group\_min\_size | Minimum number of nodes for the EKS node group | `number` | `2` | no |

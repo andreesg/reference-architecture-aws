@@ -273,7 +273,7 @@ Once you are finished with the reference architecture, you can remove all provis
 | disk\_size | Disk size in GB to use for EKS nodes | `number` | `20` | no |
 | github\_org\_id | GitHub org id (required for Backstage) | `string` | `null` | no |
 | humanitec\_org\_id | Humanitec Organization ID (required for Backstage) | `string` | `null` | no |
-| instance\_types | List of EC2 instances types to use for EKS nodes | `list(string)` | <pre>[<br>  "t3.large"<br>]</pre> | no |
+| instance\_types | List of EC2 instances types to use for EKS nodes | `list(string)` | <pre>[<br>  "t2.micro"<br>]</pre> | no |
 | with\_backstage | Deploy Backstage | `bool` | `false` | no |
 <!-- END_TF_DOCS -->
 

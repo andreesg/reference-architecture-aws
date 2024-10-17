@@ -19,7 +19,7 @@ variable "instance_types" {
 variable "disk_size" {
   description = "Disk size in GB to use for EKS nodes"
   type        = number
-  default     = 20
+  default     = 30
 }
 
 variable "with_backstage" {

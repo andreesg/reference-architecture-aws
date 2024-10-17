@@ -92,7 +92,7 @@ module "ebs_csi_irsa_role" {
 
 module "aws_eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "~> 20.2"
+  version = "20.24.1"
 
   cluster_name    = var.cluster_name
   cluster_version = var.cluster_version
